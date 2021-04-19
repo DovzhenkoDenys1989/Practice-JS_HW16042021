@@ -6,6 +6,12 @@ checkAnagram('рига', 'игра') // true
 checkAnagram('aab', 'abb') // false
 */
 
+/**
+ * a function that checks if two words are anagrams.
+ * @param {string} string1 
+ * @param {string} string2 
+ * @returns {true || false}
+ */
 const checkAnagram = (string1, string2) =>
   string1.split("").sort().join("") === string2.split("").sort().join("");
 
@@ -16,6 +22,11 @@ console.log(checkAnagram("aab", "abb"));
 2. Написать функцию, которая подсчитывает количество гласных в строке.
 */
 
+/**
+ * a function that counts the number of vowels in a string.
+ * @param {string} string 
+ * @returns {number}
+ */
 const stringVowels = (string) => {
   let countVowels = 0;
   const vowelsUkr = ["а", "о", "у", "е", "и", "і"];
@@ -35,6 +46,11 @@ console.log(stringVowels("голосні vowels"));
 который содержит отрицательные числа из первого массива.
 */
 
+/**
+ * a function that takes an array of numbers and returns a new array that contains the negative numbers from the first array.
+ * @param {[number]} array 
+ * @returns {[number]}
+ */
 const negativeNumbers = (array) => {
   let minusValues = [];
   array.forEach(function (item) {
@@ -53,12 +69,17 @@ console.log(negativeNumbers(arr1));
 состоящий только из уникальных значений первого массива (значения не должны повторяться).
 */
 
+/**
+ * a function that takes an array and returns a new array consisting only of the unique values ​​of the first array.
+ * @param {[string, symbol]} array 
+ * @returns {[string, symbol]}
+ */
 const uniqueValues = (array) => {
   let uniqueResult = [];
 
-  for (let str of array) {
-    if (!uniqueResult.includes(str)) {
-      uniqueResult.push(str);
+  for (let item of array) {
+    if (!uniqueResult.includes(item)) {
+      uniqueResult.push(item);
     }
   }
 
