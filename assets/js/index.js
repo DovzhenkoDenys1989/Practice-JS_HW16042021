@@ -10,7 +10,7 @@ checkAnagram('aab', 'abb') // false
  * a function that checks if two words are anagrams.
  * @param {string} string1 
  * @param {string} string2 
- * @returns {true || false}
+ * @returns {boolean}
  */
 const checkAnagram = (string1, string2) =>
   string1.split("").sort().join("") === string2.split("").sort().join("");
@@ -71,8 +71,8 @@ console.log(negativeNumbers(arr1));
 
 /**
  * a function that takes an array and returns a new array consisting only of the unique values ​​of the first array.
- * @param {[string, number]} array 
- * @returns {[string, number]}
+ * @param {[]} array 
+ * @returns {[]}
  */
 const uniqueValues = (array) => {
   let uniqueResult = [];
