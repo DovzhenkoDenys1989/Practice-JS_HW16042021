@@ -71,8 +71,8 @@ console.log(negativeNumbers(arr1));
 
 /**
  * a function that takes an array and returns a new array consisting only of the unique values ​​of the first array.
- * @param {[string, symbol]} array 
- * @returns {[string, symbol]}
+ * @param {[string, number]} array 
+ * @returns {[string, number]}
  */
 const uniqueValues = (array) => {
   let uniqueResult = [];
